@@ -1,5 +1,6 @@
 {
   "fullname": "@nebulario/core-logger",
+  "version": "1.0.3-master",
   "repository": {
     "url": "github.com:vicjicaman/core-logger.git",
     "upstream": {
@@ -11,6 +12,5 @@
   },
   "labels": {
     "type": "npm"
-  },
-  "version": "1.0.10-master"
+  }
 }
