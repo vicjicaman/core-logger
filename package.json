@@ -1,6 +1,6 @@
 {
   "name": "@nebulario/core-logger",
-  "version": "1.1.1-local-ui-graph-dev",
+  "version": "1.1.0-local-ui-graph-dev",
   "description": "Logger configuration module for server",
   "main": "./dist/index.js",
   "repository": "github.com:vicjicaman/core-logger.git",
