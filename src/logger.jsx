@@ -24,7 +24,6 @@ export const Logger = ({path: logPath}) => {
 
   if (process.env.NODE_ENV !== 'production' || logPath === null) {
     logger.add(new winston.transports.Console({level: "debug", format: winston.format.simple()}));
-    logger.add(new winston.transports.Console({format: winston.format.simple()}));
   }
 
   return logger;
