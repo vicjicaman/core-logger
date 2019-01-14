@@ -22,7 +22,7 @@ export const Logger = ({path: logPath}) => {
 
   const logger = winston.createLogger({level: 'info', format: winston.format.json(), transports});
 
-  if (process.env.NODE_ENV !== 'production') {
+  if (process.env.NODE_ENV !== 'production' || logPath === null) {
     logger.add(new winston.transports.Console({level: "debug", format: winston.format.simple()}));
     logger.add(new winston.transports.Console({format: winston.format.simple()}));
   }
