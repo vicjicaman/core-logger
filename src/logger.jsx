@@ -5,7 +5,7 @@ import path from 'path'
 export const Logger = ({path: logPath}) => {
 
   const transports = [];
-  if (logPath) {
+  if (logPath !== null) {
     if (!fs.existsSync(logPath)) {
       fs.mkdirSync(logPath);
     }
