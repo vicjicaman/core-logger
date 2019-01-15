@@ -1,16 +1,10 @@
 {
+  "type": "npm",
   "fullname": "@nebulario/core-logger",
-  "version": "1.0.11-master",
-  "repository": {
-    "url": "github.com:vicjicaman/core-logger.git",
-    "upstream": {
-      "template-node": {
-        "url": "github.com:vicjicaman/template-node.git",
-        "version": "1.0.5-master"
-      }
-    }
+  "version": "1.0.21-local-ui-graph-dev",
+  "upstream": {
+    "url": "github.com:vicjicaman/template-node.git",
+    "version": "1.0.5-master"
   },
-  "labels": {
-    "type": "npm"
-  }
+  "labels": []
 }

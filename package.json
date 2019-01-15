@@ -1,6 +1,6 @@
 {
   "name": "@nebulario/core-logger",
-  "version": "1.0.11-master",
+  "version": "1.1.26-master",
   "description": "Logger configuration module for server",
   "main": "./dist/index.js",
   "repository": "github.com:vicjicaman/core-logger.git",
@@ -25,12 +25,15 @@
     "clean": "rm -Rf ./dist",
     "build:prod": "yarn clean && webpack --config webpack.config.js --env.production ",
     "build:dev": "yarn clean && webpack --config webpack.config.js --env.development ",
-    "analyze": "webpack --config webpack.config.js --env.analyze",
-    "prepublish": "yarn build:prod"
+    "start:prod": "yarn build:prod --watch",
+    "start:dev": "yarn build:dev --watch",
+    "build:watch:prod": "yarn build:prod --watch",
+    "build:watch:dev": "yarn build:dev --watch",
+    "analyze": "webpack --config webpack.config.js --env.analyze"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "bunyan": "^1.8.12"
+    "winston": "^3.1.0"
   },
   "peerDependencies": {}
 }
