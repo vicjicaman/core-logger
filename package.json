@@ -1,6 +1,6 @@
 {
   "name": "@nebulario/core-logger",
-  "version": "1.70.2-clean-baseline-dev",
+  "version": "1.70.3-clean-baseline-prod",
   "description": "Logger configuration module for server",
   "main": "./dist/index.js",
   "repository": "github.com:vicjicaman/core-logger.git",
