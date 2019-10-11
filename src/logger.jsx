@@ -5,10 +5,7 @@ import { execSync } from "child_process";
 
 export const Logger = ({ path: logPath, env }) => {
   const transports = [];
-
-  console.log("log mode " + env);
   const level = env !== "production" ? "debug" : "info";
-  console.log("log level " + level);
 
   if (logPath !== null) {
     if (!fs.existsSync(logPath)) {
@@ -40,13 +37,6 @@ export const Logger = ({ path: logPath, env }) => {
       new winston.transports.Console({
         level: "debug",
         format: winston.format.simple()
-      })
-    );
-
-    logger.add(
-      new winston.transports.File({
-        level: "debug",
-        filename: path.join(logPath, "debug.log")
       })
     );
   }
